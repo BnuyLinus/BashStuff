@@ -1,5 +1,5 @@
 #!/bin/bash
-# autohibernate.sh - This script checks if no user has been logged on for 0 minutees and then hibernate this intance.
+# autohibernate.sh - This script checks if no user has been logged on for 30 minutes and then hibernate this intance.
 # This script is intended for AWS EC2 instances running AWS Linux.
 # Crontab will run this cript every 30 minutes if set up correctly:
 # */30 * * * * /path/to/autohibernate.sh
