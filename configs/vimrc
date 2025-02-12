@@ -1,0 +1,12 @@
+set nocompatible
+set modeline
+syntax on
+set showmatch
+set ai
+set si
+set expandtab
+execute pathogen#infect()
+autocmd vimenter * ++nested colorscheme gruvbox
+set background=dark
+set number
+autocmd BufEnter *.py set expandtab ai si sw=4 ts=4 sta et fo=croql
