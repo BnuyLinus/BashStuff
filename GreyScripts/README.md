@@ -17,7 +17,7 @@ This script deletes your in-game bank and mail files. This is useful to prevent 
 
 **Disclaimer:**
 
-These scripts are provided as-is.  The author are not responsible for any data loss or other issues that may arise from using these scripts.  Use at your own risk.  Always test and review codde before running any untrusted scripts.
+These scripts are provided as-is.  The author are not responsible for any data loss or other issues that may arise from using these scripts.  Use at your own risk.  Always test and review code before running any untrusted scripts.
 
 **Links:**
 
