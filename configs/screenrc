@@ -1,0 +1,2 @@
+hardstatus alwayslastline "%{= kg} %-w%{.bg}%n %t%{-}%+w %=| %h | %H |%d-%m-%y %c:%s"
+startup_message off
