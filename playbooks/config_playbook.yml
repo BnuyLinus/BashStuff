@@ -1,10 +1,12 @@
 ---
 # Ansible Playbook for some configration on debian based distros
+# Replace "{{user_name}}" with your username in this former
+# username: exampleuser
 - name: Configure Linux via Playbook
   hosts: localhost
   vars:
     state: latest
-    username: linus
+    username: "{{user_name}}"
 
   tasks:
     - name: Upgrade all apt packages
