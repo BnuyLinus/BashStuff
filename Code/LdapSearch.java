@@ -41,7 +41,7 @@ public class LdapSearch {
         try {
             ctx = new InitialLdapContext(env, null);
             System.out.println("connected");
-            //System.out.println(ctx.getEnvironment()); // Remove or comment out for public posting.  Could reveal internal info.
+            System.out.println(ctx.getEnvironment());
            
             NamingEnumeration results = null;
             SearchControls controls = new SearchControls();
