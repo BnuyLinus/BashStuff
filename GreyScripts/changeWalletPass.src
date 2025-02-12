@@ -1,0 +1,24 @@
+hostComputer = get_shell.host_computer
+
+blockchain = include_lib("/lib/blockchain.so")
+if blockchain == null then
+	exit("Blockchain was not imported.")
+else
+	print(blockchain + " got imported.")
+end if
+user = "[Wallet Username here]"
+password = "[Old Password here]"
+
+purse = blockchain.login_wallet(user,password)
+
+newPassword = "[New Password here]"
+change = purse.reset_password(newPassword)
+print(change)
+
+// Prerequisites: 
+// blockchain.so is present on your computer.
+// Wallet is set up on your computer.
+// Your old password is known by you.
+// Usage:
+// Replace fields in brackets with your values, brackets are to be removed when doing so.
+// If successful, you can use this script to change your password.
