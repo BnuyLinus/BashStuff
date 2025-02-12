@@ -1,0 +1,32 @@
+// File paths
+bankFilePath = "[Location of Bank.txt]"
+mailFilePath = "[Location of Mail.txt]"
+
+hostComputer = get_shell.host_computer
+
+// Delete Bank.txt file
+bankFile = hostComputer.File(bankFilePath)
+
+if bankFile then
+	deletionResultBank = bankFile.delete
+	
+	if typeof(deletionResultBank) == "string" and deletionResultBank.len > 0 then
+		print("ERROR: Could not delete file: " + deletionResultBank)
+	else
+		print("SUCCESS: " + bankFilePath + " was deleted.")
+	end if
+end if
+
+// Delete Mail.txt file
+mailFile = hostComputer.File(mailFilePath)
+if mailFile then
+	deletionResultMail = mailFile.delete
+	
+	if typeof(deletionResultMail) == "string" and deletionResultMail.len > 0 then
+		print("ERROR: Could not delete file: " + deletionResultMail)
+	else
+		print("SUCCESS: " + mailFilePath + " was deleted.")
+	end if
+end if
+
+// In GreyHack it is good practice to delete Bank.txt and Mail.txt as these files can be decrypted to gain access to your Bank and Mail accounts, removing these before loging off prevents easy access for fellow hackers.
