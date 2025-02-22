@@ -3,7 +3,7 @@
 # this script was part of my final project to qualify as an IT specialist for system integration
 # P.S. I passed
 
-# this simple cripts downloads an image from an AWS S3-Bucket and displays it using 'feh', a image viewer and cataloguer
+# this simple script downloads an image from an AWS S3-Bucket and displays it using 'feh', a image viewer and cataloguer
 
 
 # Define Log file for script
